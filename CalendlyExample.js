@@ -40,8 +40,10 @@ function CalendlyRoundRobin(){
 function AECalendar(accountOwner){
     //CALENDLY API
     //LOAD EMBEDED CALENDAR WITH ACCOUNTOWNER
+    //var accountOwnerInfo = curl --header "X-TOKEN: <your_token>" https://calendly.com/api/v1/users/{accountOwner}
 
-    document.getElementById('calendar').innerHTML = '<div class="calendly-inline-widget" data-url="https://calendly.com/sabeelsiddiqi/30min" style="min-width:320px;height:630px;"></div>';
+
+    document.getElementById('calendar').innerHTML = '<div class="calendly-inline-widget" data-url="'+accountOwnerInfo.url+'/30min" style="min-width:320px;height:630px;"></div>';
 
 }
 
